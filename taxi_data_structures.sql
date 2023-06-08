@@ -23,9 +23,6 @@ PRIMARY KEY CLUSTERED
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
 
-ALTER TABLE [dbo].[TaxiAvailability] ADD  CONSTRAINT [DF_TaxiAvailability_RegionDetectedFlag]  DEFAULT ((0)) FOR [RegionDetectedFlag]
-GO
-
 ALTER TABLE [dbo].[TaxiAvailability]  WITH CHECK ADD  CONSTRAINT [FK_RegionID] FOREIGN KEY([RegionID])
 REFERENCES [dbo].[RegionBoundaries] ([ID])
 GO
