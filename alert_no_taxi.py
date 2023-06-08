@@ -38,9 +38,6 @@ if returnflag == 1:
     # Chat ID of the destination (can be a user or group chat)
     chat_id = 'YOUR_CHAT_ID'
 
-    # Message to send
-    message = 'Alert: No taxis available in certain areas.\nThe following areas have no taxis: area1, area2, area3'
-
     # Create a bot instance
     bot = Bot(token=bot_token)
 
